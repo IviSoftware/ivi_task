@@ -1,8 +1,18 @@
 import '../styles/TodoSearch.css';
 
-function TodoSearch(){
+const viewSearched = (setSearched,event)=>{
+  setSearched(event.target.value)
+}
+
+
+function TodoSearch({setSearched}){
   return(
-    <input className='todoSearch' type='text' placeholder='buscar...' />
+    <input 
+      className='todoSearch' 
+      type='text' 
+      placeholder='buscar...'
+      onChange={(event)=>viewSearched(setSearched,event)}  
+    />
   );
 };
 

@@ -16,8 +16,23 @@ const todoTask = [
 function App() {
 
 
-  const [todos,setTodos] = React.useState(todoTask)
-  const completeTodos = todos.filter((todo)=>todo.completed==true).length
+  const [todos,setTodos] = React.useState(todoTask);
+  const [searched,setSearched] = React.useState('');
+
+  const completeTodos = todos.filter((todo)=>todo.completed==true).length;
+
+  let
+   todosSearch = [];
+  if(searched.length < 1){
+    todosSearch = todos;
+  }else{
+    let searchedClean = searched.toLowerCase();
+    
+    todosSearch = todos.filter((todo)=>{
+      let todoText = todo.text.toLowerCase();
+      return todoText.includes(searchedClean);
+    });
+  }
 
   return (
     <React.Fragment>
@@ -27,9 +42,10 @@ function App() {
           completeTodos={completeTodos}
         />
         <TodoSearch
+          setSearched={setSearched}
         />
         <TodoList>
-          {todoTask.map(todo=>(
+          {todosSearch.map(todo=>(
             <TodoItem
               text={todo.text}
               key={todo.text}
