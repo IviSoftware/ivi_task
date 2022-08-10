@@ -1,0 +1,16 @@
+.todoSearch{
+    width: 90vw;
+    outline: 0;
+    height: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 10px 15px 1px #93C33D;
+    transition: box-shadow 2s;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.todoSearch:focus{
+    box-shadow: 0 5px 20px 1px #93C33D;
+}

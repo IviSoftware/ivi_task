@@ -1,0 +1,21 @@
+.TodoItem{
+  width: 95%;
+  background-color: rgb(210, 210, 210);
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  color: black;
+}
+
+.buttons-container-item{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-container-item span{
+  margin-left: 10px;
+  font-size: 30px;
+}
+

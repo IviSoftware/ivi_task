@@ -1,0 +1,28 @@
+.btn{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(226, 226, 226);
+  }
+  
+  .btn-ready{
+    background-color: #93C33D;
+  }
+  
+  .btn-delete{
+    background-color: blue;
+  }
+
+  .btn-add-todo{
+    border: none;
+    width: 55px;
+    height: 55px;
+    background-color:#93C33D ;
+    font-size: 35px;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+  }
