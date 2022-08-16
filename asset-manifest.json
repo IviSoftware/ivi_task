@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ivi_task/static/css/main.2fd0ff87.css",
+    "main.js": "/ivi_task/static/js/main.91daf2af.js",
+    "index.html": "/ivi_task/index.html",
+    "main.2fd0ff87.css.map": "/ivi_task/static/css/main.2fd0ff87.css.map",
+    "main.91daf2af.js.map": "/ivi_task/static/js/main.91daf2af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fd0ff87.css",
+    "static/js/main.91daf2af.js"
+  ]
+}
