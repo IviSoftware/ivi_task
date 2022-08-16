@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     color: rgb(226, 226, 226);
+    cursor: pointer;
   }
   
   .btn-ready{
@@ -25,4 +26,10 @@
     position: fixed;
     bottom: 15px;
     right: 10px;
+    z-index: 1;
+    transition: transform 0.2s;
   }
+
+.btn-add-todo:hover{
+  transform: rotate(35deg);
+}

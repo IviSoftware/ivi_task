@@ -1,11 +1,15 @@
 import '../styles/TodoSearch.css';
+import React from 'react';
+import { TodoContext } from '../hooks/TodoContext';
 
 const viewSearched = (setSearched,event)=>{
   setSearched(event.target.value)
 }
 
+function TodoSearch(){
 
-function TodoSearch({setSearched}){
+  const {setSearched} = React.useContext(TodoContext);
+
   return(
     <input 
       className='todoSearch' 

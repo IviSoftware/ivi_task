@@ -17,5 +17,11 @@
 .buttons-container-item span{
   margin-left: 10px;
   font-size: 30px;
+  cursor: pointer;
+}
+
+.todoComplete{
+  text-decoration: line-through;
+  color: rgb(116, 116, 116);
 }
 
