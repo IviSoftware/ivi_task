@@ -1,0 +1,29 @@
+.todoLoading-container{
+    width: 80%;
+    max-width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load{
+    width: 200px;
+    height: 200px;
+    border: 10px solid #eee;
+    border-radius: 50%;
+    border-top: 10px solid #666;
+    animation-name: load;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes load {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }

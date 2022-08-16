@@ -7,6 +7,7 @@ import {ButtonTodo} from './ButtonTodo';
 import {TodoContext} from '../hooks/TodoContext.js';
 import {Modal} from './Modal';
 import {TodoForm} from './TodoForm';
+import {TodoLoading} from './TodoLoading';
 
 
 function AppUI(){
@@ -31,7 +32,9 @@ function AppUI(){
        
         <TodoList>
           {error && <p>Ha ocurrido un error...</p> }
-          {loading && <p>Estamos cargando...</p> }
+          {loading && (
+            <TodoLoading/>
+          )}
           {(!loading && todos.length<1) && <p>Crea tu primer todo</p>}  
     
           {todosSearch.map(todo=>(
