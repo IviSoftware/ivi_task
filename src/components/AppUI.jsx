@@ -6,6 +6,7 @@ import {TodoItem} from './TodoItem';
 import {ButtonTodo} from './ButtonTodo';
 import {TodoContext} from '../hooks/TodoContext.js';
 import {Modal} from './Modal';
+import {TodoForm} from './TodoForm';
 
 
 function AppUI(){
@@ -46,7 +47,7 @@ function AppUI(){
         
        {openModal && (
          <Modal>
-           <p>Teletrasnportaciooooon</p>
+           <TodoForm/>
         </Modal>
        )}
 

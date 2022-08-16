@@ -43,6 +43,13 @@ function TodoProvider(props){
     saveTodosLocal(newTodos)
   }
 
+  const addTodo = (text)=>{
+    newTodos.push({
+      text,
+      completed:false
+    })
+    saveTodosLocal(newTodos);
+  }
 
   const totalTodos = todos.length;
 
@@ -62,6 +69,7 @@ function TodoProvider(props){
         error,
         openModal,
         setOpenModal,
+        addTodo
       }}>
         {props.children}
       </TodoContext.Provider>

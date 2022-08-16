@@ -1,0 +1,42 @@
+form{
+ width: 85%;
+ max-width: 500px;
+ height: 400px;
+ background-color: white;
+ color: black;
+ border-radius: 20px;
+ padding: 10px;
+ display: flex;
+ flex-direction: column;
+}
+
+form label,
+form textarea,
+form button{
+  margin-bottom: 20px;
+}
+
+form label{
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+
+}
+
+form textarea{
+  height: 60%;
+  font-size: 20px;
+}
+
+form button{
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 5px;
+  background-color: #93C33D;
+}
+form button:hover{
+  color: white;
+}
+
+
